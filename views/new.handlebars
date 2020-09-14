@@ -1,0 +1,21 @@
+<main>
+  <h2>Create a new poll</h2><br><br>
+  <form id="newpoll" action="/polls/new" method="post">
+      <div class="form-group">
+          <label>Number: 2 or more options:</label>
+          <input type="text" class="form-control" placeholder="Example: 3" id="numberOptions" name="numberOptions" required>
+      </div>
+      <button class="btn btn-primary" onclick="getInputValue()">Continue</button>
+      <div id="myDIV" class="form-group">
+          <label>Poll Question:</label>
+          <input type="text" class="form-control" placeholder="Example: Which is your favorite color?" name="title" required>
+          <br>
+          <div class="form-group" id="dynamicDiv">
+          </div>
+          <button onclick="submitedPoll()" class="btn btn-primary">Create a new poll</button>
+      </div>
+      <div hidden class="form-group">
+          <textarea id="options" class="options form-control" name="options" rows="5" cols="40"></textarea>
+      </div>
+  </form>
+</main>

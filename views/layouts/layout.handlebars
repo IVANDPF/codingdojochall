@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poll coding dojo</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <script type="text/javascript" src="/js/Chart.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/new_script.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Home</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  {{#if user}}
+                    <li><a class="navbar-brand" href="/">{{user.name}}</a></li>
+                  {{/if}}
+                  {{#if user}}
+                    <li><a href="/users/logout">Logout</a></li>
+                  {{else}}
+                    <li><a href="/users/login">Login</a></li>
+                    <li><a href="/users/register">Register</a></li>
+                  {{/if}}
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container margin-div">
+          {{{body}}}
+        </div>
+
+    </body>
+</html>

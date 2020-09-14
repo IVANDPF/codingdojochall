@@ -1,0 +1,45 @@
+body {
+  padding-top: 70px;
+}
+
+/*General Layout*/
+.margin-div{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+
+/*Index Layout*/
+.center {
+  text-align: center;
+}
+
+/*Add new Poll*/
+#myDIV {
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	display: none;
+}
+
+.options {
+  font-size: 1.4em;
+}
+
+.poll-list, .poll-list:hover, .poll-list:focus {
+  color: #222;
+}
+
+.poll-list li {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+.list-ety:hover {
+	background-color: #ffffff;
+}
+
+.chart {
+	margin-top: 35px;
+}
+
+
